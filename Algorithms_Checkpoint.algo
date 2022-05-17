@@ -1,0 +1,34 @@
+ALGORITHM read_sentence
+VAR
+    sentence: CHAR; // Algo parameter
+    c, s, v : INTEGER := 0; // counters of characters 'c', spaces 's' and vowels 'v' 
+    pt: CHAR := "." // point variable
+    space: CHAR := " " // space variable
+BEGIN
+    WHILE (sentence[i] != ".") DO
+        IF (conditon) THEN
+            set_instructions
+        END_IF
+
+    END_WHILE
+END
+
+
+
+
+
+"My name is Fahd."
+
+
+sentence ends with a "."   
+
+
+// PROBLEM: make an Algo that read sentence length
+
+// step 1: loop until the point "."
+// step 2: 
+
+// to count spaces
+IF (sentence[i] = " ") THEN
+    s:= s + 1 
+END_IF
