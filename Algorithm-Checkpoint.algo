@@ -1,0 +1,35 @@
+////////////// Algorithm Checkpoint: //////////////
+ALGORITHM Sentence_Length
+VAR
+    sentence: STRING; // sentence to be read 
+    sentenceLength, wordsNbr, vowelsNbr: INTEGER := 0 // length, words ands vowels counters 
+
+BEGIN
+    REPEAT
+        Write ("enter a valid sentence"); 
+        Read (sentence);
+        
+    UNTIL (sentence = "")
+
+    WHILE (sentence[i] <> "." ) DO
+        sentenceLength := sentenceLength + 1
+        IF (sentence[i] = "a" OR sentence[i] = "A" OR sentence[i] = "e" OR sentence[i] = "E" OR 
+        sentence[i] = "u" OR sentence[i] = "U" OR sentence[i] = "i" OR sentence[i] = "I" OR 
+        sentence[i] = "o" OR sentence[i] = "O") THEN
+            vowelsNbr:= vowelsNbr + 1 
+        END_IF
+
+        IF (sentence[i] = " " ) THEN
+            wordsNbr :=  wordsNbr + 1
+        END_IF
+        i:= i + 1    
+    END_WHILE
+    sentenceLength := sentenceLength + 1 
+    
+        IF (sentence[i - 1] <> " ") THEN
+            wordsNbr := wordsNbr + 1
+        END_IF 
+    Write(sentenceLength, wordsNbr, vowelsNbr)
+END
+
+
